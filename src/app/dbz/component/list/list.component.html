@@ -26,11 +26,10 @@
       </div>
 
       <button
-        (click)=" onDeleteCharacter(i)"
-        type="submit"
-        class="btn btn-danger">
-        X
-      </button>
-
+      (click)="deleteCharacterById(character.id || '')"
+      type="submit"
+      class="btn btn-danger">
+      X</button>
+      <!-- (click)=" onDeleteCharacter(i)" -->
     </li>
   </ul>

@@ -9,7 +9,7 @@ import { Character } from '../../interfaces/character.interface';
 export class AddCharacterComponent {
 
   @Output()
-  onNewCharacter: EventEmitter<Character>=new EventEmitter();
+  public onNewCharacter: EventEmitter<Character>=new EventEmitter();
 
   public character : Character={
     name:'',

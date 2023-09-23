@@ -22,12 +22,14 @@ export class ListComponent {
     //this.onDelete.emit(index)
   //}
 
-  deleteCharacterById(id:string):void{
-    if(id !== undefined){
-      this.onDelete2.emit(id);
-    }else{
-      return;
-    }
+  deleteCharacterById(id?:string):void{
+    // if(id !== undefined){
+    //   this.onDelete2.emit(id);
+    // }else{
+    //   return;
+    // }
+    if(!id) return;
+    this.onDelete2.emit(id);
   }
 
 }

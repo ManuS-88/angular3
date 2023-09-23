@@ -5,8 +5,8 @@
   <div class="col">
 
     <app-dbz-list
-     [characterList]="dbzService.characters"
-     (onDelete2)="dbzService.deleteCharacterById($event)"
+     [characterList]="characters"
+     (onDelete2)="onDeleteCharacter($event)"
      > </app-dbz-list>
      <!-- (onDelete)="dbzService.onDeleteCharacter($event)" -->
 
@@ -14,7 +14,7 @@
   <div class="col">
 
     <app-dbz-add-character
-    (onNewCharacter)="dbzService.onNewCharacter($event)"
+    (onNewCharacter)="onNewCharacter($event)"
     ></app-dbz-add-character>
 
   </div>
